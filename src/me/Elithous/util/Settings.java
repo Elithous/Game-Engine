@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-public class settings {
+public class Settings {
 	private static void save(Properties prop) throws IOException {
 		File settingsFile = new File("settings.properties");
 		FileWriter writer = new FileWriter(settingsFile);

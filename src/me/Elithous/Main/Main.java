@@ -8,7 +8,7 @@ import java.awt.image.BufferStrategy;
 import java.io.IOException;
 
 import me.Elithous.Window.Window;
-import me.Elithous.util.settings;
+import me.Elithous.util.Settings;
 
 public class Main extends Canvas implements Runnable{
 	
@@ -99,10 +99,10 @@ public class Main extends Canvas implements Runnable{
 	public static void init() {
 		String[] sets = null;
 		try {
-			sets = settings.load();
+			sets = Settings.load();
 		} catch(Exception e) {
 			try {
-				settings.resetToDefault();
+				Settings.resetToDefault();
 				System.out.println(e.getMessage());
 			} catch (IOException e1) {
 				e1.printStackTrace();
